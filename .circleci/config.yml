@@ -23,4 +23,4 @@ jobs:
           command: |
             . venv/bin/activate
             pytest -v --cov
-            flake8 --statistics
+            flake8 ./swapi_people.py --statistics
