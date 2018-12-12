@@ -7,7 +7,8 @@ argparse==1.1.0\
 requests==2.21.0
 
 # Usage
-swapi_people.py --name character name
+swapi_people.py --name character name\
+(if --name is not passed, the name Luke Skywalker is used to provide example output)
 
 swapi_people.py --name luke skywalker
 
