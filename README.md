@@ -2,7 +2,7 @@
 This is a lookup tool that queries the free online Star Wars API. It returns the Name, Birth Year, and Species of the character name passed as with the --name argument at the command line.
 
 # Requirements
-(built in) os\
+(built in) os\n
 argparse==1.1.0
 requests==2.21.0
 
