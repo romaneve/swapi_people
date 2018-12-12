@@ -4,7 +4,7 @@ This is a lookup tool that queries the free online Star Wars API. It returns the
 # Requirements
 (built in) os\
 argparse==1.1.0\
-requests==2.21.0\
+requests==2.21.0
 
 # Usage
 swapi_people.py --name character name
@@ -15,7 +15,7 @@ swapi_people.py --name luke skywalker
   # Sample Output
   Name: Luke Skywalker\
   Birth Year: 19BBY\
-  Species: Human\
+  Species: Human
 
 # Alternate Usage
 passing the word list as the name returns a list of character names available from the API.
@@ -32,4 +32,4 @@ swapi_people.py --name list
   Beru Whitesun lars\
   R5-D4\
   Biggs Darklighter\
-  Obi-Wan Kenobi\
+  Obi-Wan Kenobi
