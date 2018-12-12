@@ -9,7 +9,6 @@ requests==2.21.0
 # Usage
 swapi_people.py --name character name
 
-# Example
 swapi_people.py --name luke skywalker
 
   Sample Output:\
