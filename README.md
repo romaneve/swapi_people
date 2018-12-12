@@ -12,7 +12,7 @@ swapi_people.py --name character name
 # Example
 swapi_people.py --name luke skywalker
 
-  # Sample Output
+  Sample Output:\
   Name: Luke Skywalker\
   Birth Year: 19BBY\
   Species: Human
@@ -22,7 +22,7 @@ passing the word list as the name returns a list of character names available fr
 
 swapi_people.py --name list
 
-  # Sample Output
+  Sample Output:\
   Luke Skywalker\
   C-3PO\
   R2-D2\
