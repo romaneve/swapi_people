@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
  /(_)\ Honeyman
- \* */ 12-10-2018
-  \_/  day of year: 344
+ \* */ Last Update: 12-12-2018
+  \_/  day of year: 346
 Star Wars People Query:
     pass a character name to return their
     birth year and species.
@@ -11,6 +11,8 @@ Star Wars People Query:
 import os, requests, argparse
 
 def clr():
+    # clear the screen before displaying output
+    # for a easier reading.
     os.system('clear')
 
 
@@ -25,7 +27,9 @@ def prep_name(raw_name):
     return name.rstrip()
 
 def list_characters(url):
-    # pull and return all names from the dataset.
+    # pull and return all names from the dataset. returns
+    # a dictionary containing the return code and a list
+    # of characters.
     l_out = []
     try:
         j = requests.get(url).json()['results']
@@ -65,7 +69,9 @@ def get_character(name, url):
 if __name__ == "__main__":
     # gathering the command line arguments
     # name is passed from the command line
-    # as --name character name.
+    # as --name character name. if --name is not
+    # passed it returns sample data using Luke
+    # Skywalker.
     url = f"https://swapi.co/api/people/?format=json"
     CLI = argparse.ArgumentParser()
     CLI.add_argument(
@@ -88,7 +94,7 @@ if __name__ == "__main__":
     
     # print out the results to the command line
     # the set includes a return code used below
-    # to direct the output path.
+    # to direct the output.
     # code values:
     #   code 0 = get_name success
     #   code 1 = list_characters success
