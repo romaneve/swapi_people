@@ -1,2 +1,5 @@
 argparse==1.1.0
 requests==2.21.0
+pytest==4.0.1
+pytest-cov==2.6.0
+flake8==3.6.0
